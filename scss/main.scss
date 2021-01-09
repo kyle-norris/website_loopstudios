@@ -336,9 +336,29 @@ li {
         
         .social-icon {
             display: flex;
+            flex-direction: column;
             margin-left: 1rem;
-            height: 24px;
-            align-items: center;
+            height: 34px;
+
+            .icon-img {
+                display: flex;
+                height: 24px;
+                justify-self: flex-start;
+
+                img {
+                    align-self: center;
+                }
+            }
+            &:hover {
+                .underline {
+                    height: 2px;
+                    width: 24px;
+                
+                    margin-bottom: 0px;
+                    margin-top: auto;
+                    background-color: $primary-white;
+                }
+            }
         }
     }
 
