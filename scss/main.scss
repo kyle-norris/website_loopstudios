@@ -3,16 +3,28 @@
 * {
     font-family: 'Alata', 'Josefin Sans', sans-serif;
     margin: 0;
-
-    a {
-        text-decoration: none;
-        color: $primary-white;
-    }
-
-    li {
-        list-style-type: none;
-    }
 } 
+
+h2 {
+    font-family: 'Josefin Sans';
+    font-size: 48px;
+    font-weight: 300;
+}
+
+h3 {
+    font-family: 'Josefin Sans';
+    font-size: 32px;
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: $primary-white;
+}
+
+li {
+    list-style-type: none;
+}
 
 
 .banner {
@@ -110,9 +122,6 @@
         top: 183px;
 
         h2 {
-            font-family: 'Josefin Sans';
-            font-size: 48px;
-            font-weight: 300;
             margin-left: 96px;
             margin-bottom: 25px;
             margin-top: 96px;
@@ -130,4 +139,76 @@
 
 
     }
+}
+
+.gallery {
+    .see-all {
+        color: $primary-black;
+    }
+
+    a {
+        //TEMPORARY
+        color: black;
+    }
+
+    .gallery-header {
+        display: flex;
+        width: 1111px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 80px;
+
+
+        div {
+            width: 50%;
+        }
+        h2 {
+            float:left;
+        }
+
+        .see-all {
+            float:right;
+            color: $primary-black;
+            outline: solid $primary-black 1px;
+            padding: 13px 38px;
+            font-size: 14px;
+            letter-spacing: 5px;
+        }
+    }
+
+
+    .img-grid {
+        display: grid;
+        grid-template-areas:
+        'r1 r2 r3 r4'
+        'r5 r6 r7 r8';
+        grid-template-columns: repeat(4, 256px);
+        grid-template-rows: repeat(2, 450px);
+        grid-gap: 30px;
+        justify-content: center;
+
+        .image-1 {
+            grid-area: r1;
+            background: url(../img/desktop/image-deep-earth.jpg);
+            background-size: cover;
+        }
+
+        .img {
+            align-items: end;
+
+            a {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .gallery-label {
+            grid-area: 1;
+            color: $primary-white;
+            margin-top: auto;
+            margin-bottom: 0;
+        }
+    }
+
+
 }
