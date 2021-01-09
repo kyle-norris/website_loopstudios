@@ -65,4 +65,54 @@
             margin-left: 0px;
         }
     }
+
+    .vr-blurb {
+        margin-top: 10rem;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 10rem;
+        width: 87.2vw;
+        display: flex;
+        flex-direction: column;
+    
+        img {
+            width: 100%;
+            height: auto;
+            z-index: -1;
+        }
+    
+        .blurb {
+            float: none;
+            background: white;
+            height: auto;
+            width: 100%;
+            z-index: 2;
+            position: static;
+            right: 0;
+            top: 0;
+    
+            h2 {
+                margin-left: auto;
+                margin-bottom: 16px;
+                margin-top: 48px;
+                width: 100%;
+                font-size: 32px;
+                text-align: center;
+            }
+    
+            p {
+                font-size: 15px;
+                margin-left: auto;
+                margin-right: auto;
+                font-family: 'Alata';
+                color: $primary-darkgrey;
+                width: 85.3%;
+                text-align: center;
+            }
+            
+    
+    
+        }
+    }
+    
 }
