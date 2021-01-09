@@ -66,7 +66,7 @@ li {
     grid-template-rows: 25fr 75fr;
     grid-template-areas:
     'logo nav'
-    'title .';
+    'title title';
 
 
     .logo {
@@ -374,3 +374,5 @@ li {
 
 
 }
+
+@import 'responsive';

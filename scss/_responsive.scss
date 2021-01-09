@@ -1,0 +1,64 @@
+
+@include media-sm {
+    .banner {
+        background: url(../img/mobile/image-hero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+
+
+        .headline-wrapper {
+            grid-area: title;
+            display: flex;
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            
+            .headline {
+                position: static;
+                width: 327px;
+                height: 196px;
+                display: flex;
+                align-items: center;
+                margin-top: 10px;
+    
+                h1 {
+                    font-size: 40px;
+                    padding-right: 20px;
+                }
+    
+                
+            }
+        }
+        
+
+        .menu {
+            display: flex;
+            justify-content: flex-end;
+
+            margin-top: 44px;
+
+            .menu-nav {
+                display: none;
+            }
+
+            .menu-btn {
+                .btn-line {
+                    height: 2px;
+                    width: 24px;
+                    background-color: $primary-white;
+                    margin-bottom: 5px;
+                    margin-right: 24px;
+                    
+                }
+            }
+        }
+
+        .logo {
+            top: 40px;
+            left: 24px;
+            height: 2rem;
+            margin-left: 0px;
+        }
+    }
+}
