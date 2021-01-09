@@ -70,10 +70,11 @@
         margin-top: 10rem;
         margin-right: auto;
         margin-left: auto;
-        margin-bottom: 10rem;
+        margin-bottom: 6rem;
         width: 87.2vw;
         display: flex;
         flex-direction: column;
+        height: auto;
     
         img {
             width: 100%;
@@ -113,6 +114,152 @@
     
     
         }
+    }
+
+    .gallery {
+        .see-all {
+            color: $primary-black;
+        }
+    
+        .gallery-header {
+            display: flex;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 48px;
+    
+    
+            div {
+                width: 100%;
+            }
+
+            .btn {
+                display: none;
+            }
+
+            h2 {
+                width: 100%;
+                font-size: 8.5vw;
+                text-align: center;
+
+            }
+    
+            .see-all {
+                float:right;
+                color: $primary-black;
+                outline: solid $primary-black 1px;
+                padding: 13px 38px;
+                font-size: 14px;
+                letter-spacing: 5px;
+    
+                &:hover {
+                    background-color: $primary-black;
+                    transition: ease 0.2s;
+                    color: $primary-white;
+                }
+            }
+        }
+    
+    
+        .img-grid {
+            display: grid;
+            grid-template-areas:
+            'r1'
+            'r2'
+            'r3'
+            'r4'
+            'r5'
+            'r6'
+            'r7'
+            'r8';
+            grid-template-columns: 87.2vw;
+            grid-template-rows: repeat(8, 32vw);
+            grid-gap: 24px;
+            justify-content: center;
+    
+            .image-1 {
+                grid-area: r1;
+                background: url(../img/mobile/image-deep-earth.jpg);
+                background-size: cover;
+            }
+    
+            .image-2 {
+                grid-area: r2;
+                background: url(../img/mobile/image-night-arcade.jpg);
+                background-size: cover;
+            }
+    
+            .image-3 {
+                grid-area: r3;
+                background: url(../img/mobile/image-soccer-team.jpg);
+                background-size: cover;
+            }
+    
+            .image-4 {
+                grid-area: r4;
+                background: url(../img/mobile/image-grid.jpg);
+                background-size: cover;
+            }
+    
+            .image-5 {
+                grid-area: r5;
+                background: url(../img/mobile/image-from-above.jpg);
+                background-size: cover;
+            }
+    
+            .image-6 {
+                grid-area: r6;
+                background: url(../img/mobile/image-pocket-borealis.jpg);
+                background-size: cover;
+            }
+    
+            .image-7 {
+                grid-area: r7;
+                background: url(../img/mobile/image-curiosity.jpg);
+                background-size: cover;
+            }
+    
+            .image-8 {
+                grid-area: r8;
+                background: url(../img/mobile/image-fisheye.jpg);
+                background-size: cover;
+            }
+    
+            .img {
+                height: 100%;
+                width: 100%;
+    
+                .overlay {
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    align-items: flex-end;
+    
+                    &:hover{
+                        background-color: $primary-white;
+                        opacity: 0.75;
+                        transition: ease 0.2s;
+    
+                        h3 {
+                            color: $primary-black;
+                        }
+                    }
+                }
+    
+    
+            }
+    
+            .gallery-label {
+                grid-area: 1;
+                color: $primary-white;
+                margin-left: 20px;
+                margin-bottom: 20px;
+                max-width: 34.7vw;
+                font-size: 6.4vw;
+            }
+        }
+    
+    
     }
     
 }
