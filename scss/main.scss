@@ -82,3 +82,52 @@
     }
 
 }
+
+
+.vr-blurb {
+    margin-top: 10rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10rem;
+    height: 500px;
+    width: 1111px;
+    display: flex;
+
+    img {
+        width: 731px;
+        height: 500px;
+        z-index: -1;
+    }
+
+    .blurb {
+        float: right;
+        background: white;
+        height: 317px;
+        width: 541px;
+        z-index: 2;
+        position: relative;
+        right: 161px;
+        top: 183px;
+
+        h2 {
+            font-family: 'Josefin Sans';
+            font-size: 48px;
+            font-weight: 300;
+            margin-left: 96px;
+            margin-bottom: 25px;
+            margin-top: 96px;
+            width: 100%;
+        }
+
+        p {
+            font-size: 15px;
+            margin-left: 96px;
+            font-family: 'Alata';
+            color: $primary-darkgrey;
+            width: 445px;
+        }
+        
+
+
+    }
+}
