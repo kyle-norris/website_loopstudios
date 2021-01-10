@@ -14,50 +14,52 @@
 <body>
 
 
-    <main id="home">
+    <main id="home" class="home closed">
         <div class="banner">
             <img src="dist/img/logo.svg" alt="loopstudios" class="logo">
-            <nav class="menu">
-                <div class="menu-btn">
+
+            <div class="menu closed">
+                <div class="menu-btn" id="menu-btn">
                     <div class="btn-line"></div>
                     <div class="btn-line"></div>
                     <div class="btn-line"></div>
-                    <div class="btn-close"></div>
-                    <div class="btn-close"></div>
                 </div>
-                <ul class="menu-nav">
-                    <li class="nav-item">
-                        <a href="#!" class="nav-link">
-                            About
-                        </a>
-                        <div class="underline"></div>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#!" class="nav-link">
-                            Careers
-                        </a>
-                        <div class="underline"></div>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#!" class="nav-link">
-                            Events
-                        </a>
-                        <div class="underline"></div>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#!" class="nav-link">
-                            Products
-                        </a>
-                        <div class="underline"></div>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#!" class="nav-link">
-                            Support
-                        </a>
-                        <div class="underline"></div>
-                    </li>
-                </ul>
-            </nav>
+                <nav class="nav">
+                    <ul class="menu-nav">
+                        <li class="nav-item">
+                            <a href="#!" class="nav-link">
+                                About
+                            </a>
+                            <div class="underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#!" class="nav-link">
+                                Careers
+                            </a>
+                            <div class="underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#!" class="nav-link">
+                                Events
+                            </a>
+                            <div class="underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#!" class="nav-link">
+                                Products
+                            </a>
+                            <div class="underline"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#!" class="nav-link">
+                                Support
+                            </a>
+                            <div class="underline"></div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
             <div class="headline-wrapper">
                 <div class="headline">
                     <h1>IMMERSIVE EXPERIENCES THAT DELIVER</h1>
@@ -155,93 +157,139 @@
             </div>
         </div>
 
+        <footer id="footer" class="footer">
+
+            <img src="dist/img/logo.svg" alt="loopstudios" class="footer-logo">
+    
+            <nav class="menu footer-menu">
+                <ul class="menu-nav footer-nav">
+                    <li class="nav-item footer-nav-item">
+                        <a href="#!" class="nav-link footer-nav-link">
+                            About
+                        </a>
+                        <div class="underline"></div>
+                    </li>
+                    <li class="nav-item footer-nav-item">
+                        <a href="#!" class="nav-link footer-nav-link">
+                            Careers
+                        </a>
+                        <div class="underline"></div>
+                    </li>
+                    <li class="nav-item footer-nav-item">
+                        <a href="#!" class="nav-link footer-nav-link">
+                            Events
+                        </a>
+                        <div class="underline"></div>
+                    </li>
+                    <li class="nav-item footer-nav-item">
+                        <a href="#!" class="nav-link footer-nav-link">
+                            Products
+                        </a>
+                        <div class="underline"></div>
+                    </li>
+                    <li class="nav-item footer-nav-item">
+                        <a href="#!" class="nav-link footer-nav-link">
+                            Support
+                        </a>
+                        <div class="underline"></div>
+                    </li>
+                </ul>
+            </nav>
+    
+            <div class="footer-social">
+                <a href="#!">
+                    <i class="social-icon">
+                        <div class="icon-img">
+                            <img src="dist/img/icon-facebook.svg" alt="">
+                        </div>
+                        <div class="underline"></div>
+                    </i>
+                    
+                </a>
+                <a href="#!">
+                    <i class="social-icon">
+                        <div class="icon-img">
+                            <img src="dist/img/icon-twitter.svg" alt="">
+                        </div>
+                        <div class="underline"></div>
+                    </i>
+                </a>
+                <a href="#!">
+                    <i class="social-icon">
+                        <div class="icon-img">
+                            <img src="dist/img/icon-pinterest.svg" alt="">
+                        </div>
+                        <div class="underline"></div>
+                    </i>
+                </a>
+                <a href="#!">
+                    <i class="social-icon">
+                        <div class="icon-img">
+                            <img src="dist/img/icon-instagram.svg" alt="">
+                        </div>
+                        
+                        <div class="underline"></div>
+                    </i>
+                </a>
+            </div>
+    
+            <div class="footer-copyright">
+                <p>
+                    &copy; 2021 Loopstudios. All rights reserved.
+                </p>
+            </div>
+    
+        </footer>
     </main>
 
-    <footer id="footer">
-
-        <img src="dist/img/logo.svg" alt="loopstudios" class="footer-logo">
-
-        <nav class="menu footer-menu">
-            <ul class="menu-nav footer-nav">
-                <li class="nav-item footer-nav-item">
-                    <a href="#!" class="nav-link footer-nav-link">
+    <div class="drop-down-nav">
+        <img src="dist/img/logo.svg" alt="loopstudios" class="drop-logo">
+        <div class="close-btn">
+            <div class="close-btn-container">
+                <div class="close-line"></div>
+                <div class="close-line"></div>
+            </div>
+        </div>
+        <nav class="drop-nav">
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="#!" class="nav-link">
                         About
                     </a>
                     <div class="underline"></div>
                 </li>
-                <li class="nav-item footer-nav-item">
-                    <a href="#!" class="nav-link footer-nav-link">
+                <li class="nav-item">
+                    <a href="#!" class="nav-link">
                         Careers
                     </a>
                     <div class="underline"></div>
                 </li>
-                <li class="nav-item footer-nav-item">
-                    <a href="#!" class="nav-link footer-nav-link">
+                <li class="nav-item">
+                    <a href="#!" class="nav-link">
                         Events
                     </a>
                     <div class="underline"></div>
                 </li>
-                <li class="nav-item footer-nav-item">
-                    <a href="#!" class="nav-link footer-nav-link">
+                <li class="nav-item">
+                    <a href="#!" class="nav-link">
                         Products
                     </a>
                     <div class="underline"></div>
                 </li>
-                <li class="nav-item footer-nav-item">
-                    <a href="#!" class="nav-link footer-nav-link">
+                <li class="nav-item">
+                    <a href="#!" class="nav-link">
                         Support
                     </a>
                     <div class="underline"></div>
                 </li>
             </ul>
         </nav>
+        
+    </div>
 
-        <div class="footer-social">
-            <a href="#!">
-                <i class="social-icon">
-                    <div class="icon-img">
-                        <img src="dist/img/icon-facebook.svg" alt="">
-                    </div>
-                    <div class="underline"></div>
-                </i>
-                
-            </a>
-            <a href="#!">
-                <i class="social-icon">
-                    <div class="icon-img">
-                        <img src="dist/img/icon-twitter.svg" alt="">
-                    </div>
-                    <div class="underline"></div>
-                </i>
-            </a>
-            <a href="#!">
-                <i class="social-icon">
-                    <div class="icon-img">
-                        <img src="dist/img/icon-pinterest.svg" alt="">
-                    </div>
-                    <div class="underline"></div>
-                </i>
-            </a>
-            <a href="#!">
-                <i class="social-icon">
-                    <div class="icon-img">
-                        <img src="dist/img/icon-instagram.svg" alt="">
-                    </div>
-                    
-                    <div class="underline"></div>
-                </i>
-            </a>
-        </div>
+    
 
-        <div class="footer-copyright">
-            <p>
-                &copy; 2021 Loopstudios. All rights reserved.
-            </p>
-        </div>
-
-    </footer>
-
-    <script src="js/main.js"></script>
+    <script src="dist/js/main.js"></script>
 
 </body>
 </html>

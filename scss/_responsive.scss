@@ -20,7 +20,7 @@
                 height: auto;
                 display: flex;
                 align-items: center;
-                margin-top: 10px;
+                margin-top: 64.5px;
                 margin-bottom: auto;
     
                 h1 {
@@ -38,22 +38,25 @@
 
         .menu {
             display: flex;
-            justify-content: flex-end;
-
-            margin-top: 44px;
-
-            .menu-nav {
-                display: none;
-            }
 
             .menu-btn {
+                position: static;
+                margin-left: auto;
+                margin-right: 24px;
+                margin-top: 44px;
+                top: 44px;
+                right: 24px;
+                z-index: 4;
                 .btn-line {
                     height: 2px;
                     width: 24px;
                     background-color: $primary-white;
                     margin-bottom: 5px;
-                    margin-right: 24px;
-                    
+                    margin-right: 0;
+                }
+
+                &:hover {
+                    cursor: pointer;
                 }
             }
         }
@@ -61,7 +64,7 @@
         .logo {
             top: 40px;
             left: 24px;
-            height: 2rem;
+            height: 24px;
             margin-left: 0px;
         }
     }
@@ -354,5 +357,95 @@
     
     
     }
+ 
     
+    body.open {
+        overflow: hidden;
+    }
+
+    .drop-down-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: $primary-black;
+        z-index: 0;
+        opacity: 0;
+        overflow-y: hidden;
+        overflow-x: hidden;
+
+        display: grid;
+        grid-template-areas:
+        'logo btn'
+        'nav nav';
+        grid-template-rows: 1fr 4fr;
+
+        .close-btn {
+
+            .close-btn-container {
+                height: 22px;
+                width: 24px;
+                margin-left: auto;
+                margin-right: 26px;
+                margin-top: 42px;
+
+
+                .close-line {
+                    height: 2px;
+                    width: 24px;
+                    background-color: $primary-white;
+                    
+    
+                    &:nth-child(1) {
+                        transform: rotate(45deg);
+                        position: relative;
+                        top: 10px;
+                    }
+                    &:nth-child(2) {
+                        transform: rotate(-45deg);
+                        position: relative;
+                        top: 8px;
+                        
+                    }
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+    
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            
+        }
+
+        .drop-logo {
+            height: 24px;
+            margin-top: 40px;
+            margin-left: 24px;
+        }
+
+        .drop-nav {
+            grid-area: nav;
+
+            .menu-nav {
+                .nav-item {
+                    a {
+                        font-size: 24px;
+                        font-family: 'Josefin Sans';
+                        text-transform: uppercase;
+                        line-height: 48px;
+                    }
+                    
+                }
+            }
+        }
+
+    }
+
+    .drop-down-nav.open {
+        opacity: 1;
+        z-index: 10;
+        overflow: hidden;
+    }
 }
