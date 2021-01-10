@@ -373,13 +373,8 @@
         z-index: 0;
         opacity: 0;
         overflow-y: hidden;
-        overflow-x: hidden;
+        display: none;
 
-        display: grid;
-        grid-template-areas:
-        'logo btn'
-        'nav nav';
-        grid-template-rows: 1fr 4fr;
 
         .close-btn {
 
@@ -447,5 +442,11 @@
         opacity: 1;
         z-index: 10;
         overflow: hidden;
+
+        display: grid;
+        grid-template-areas:
+        'logo btn'
+        'nav nav';
+        grid-template-rows: 1fr 4fr;
     }
 }
