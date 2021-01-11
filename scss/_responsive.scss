@@ -1,5 +1,6 @@
 
 @include media-sm {
+
     .banner {
         background: url(../img/mobile/image-hero.jpg);
         background-size: cover;
@@ -368,7 +369,7 @@
         top: 0;
         left: 0;
         width: 100vw;
-        height: 100vh;
+        height: 100%;
         background-color: $primary-black;
         z-index: 0;
         opacity: 0;
@@ -448,5 +449,11 @@
         'logo btn'
         'nav nav';
         grid-template-rows: 1fr 4fr;
+    }
+
+    .menu {
+        .nav {
+            display: none;
+        }
     }
 }
